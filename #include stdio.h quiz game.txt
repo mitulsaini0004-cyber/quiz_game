@@ -1,0 +1,85 @@
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+    char ans;
+
+    printf("===== C Programming Quiz =====\n\n");
+
+    // Question 1
+    printf("1. Who developed C language?\n");
+    printf("a) James Gosling\n");
+    printf("b) Dennis Ritchie\n");
+    printf("c) Bjarne Stroustrup\n");
+    printf("d) Guido van Rossum\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &ans);
+
+    if (ans == 'b' || ans == 'B') {
+        score++;
+    }
+
+    // Question 2
+    printf("\n2. Which symbol is used for comments in C?\n");
+    printf("a) //\n");
+    printf("b) <!-- -->\n");
+    printf("c) #\n");
+    printf("d) %%\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &ans);
+
+    if (ans == 'a' || ans == 'A') {
+        score++;
+    }
+
+    // Question 3
+    printf("\n3. Which function is used to print output in C?\n");
+    printf("a) print()\n");
+    printf("b) echo()\n");
+    printf("c) printf()\n");
+    printf("d) cout<<\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &ans);
+
+    if (ans == 'c' || ans == 'C') {
+        score++;
+    }
+
+    // Question 4
+    printf("\n4. Which header file is required for printf()?\n");
+    printf("a) stdlib.h\n");
+    printf("b) conio.h\n");
+    printf("c) math.h\n");
+    printf("d) stdio.h\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &ans);
+
+    if (ans == 'd' || ans == 'D') {
+        score++;
+    }
+
+    // Question 5
+    printf("\n5. Which loop is used when number of iterations is known?\n");
+    printf("a) while\n");
+    printf("b) do-while\n");
+    printf("c) for\n");
+    printf("d) switch\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &ans);
+
+    if (ans == 'c' || ans == 'C') {
+        score++;
+    }
+
+    printf("\n===== RESULT =====\n");
+    printf("Your Score: %d/5\n", score);
+
+    if (score == 5)
+        printf("Grade: Excellent!\n");
+    else if (score >= 3)
+        printf("Grade: Good!\n");
+    else
+        printf("Grade: Needs Improvement\n");
+
+    return 0;
+}
